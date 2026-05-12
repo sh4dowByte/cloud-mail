@@ -12,6 +12,7 @@ jobs:
   Deploy-cloud-mail:
     name: 🏗️ Build and Deploy
     runs-on: ubuntu-latest
+    environment: Cloud Mail
 
     env:
       NAME: ${{ secrets.NAME || vars.NAME || 'cloud-mail' }}
